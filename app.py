@@ -86,18 +86,26 @@ html, body, [class*="css"] {
 .stTextInput > div > div > input,
 .stTextArea > div > div > textarea,
 .stSelectbox > div > div > div {
-    background: rgba(255,255,255,0.07) !important;
-    border: 1px solid rgba(255,255,255,0.15) !important;
+    background: rgba(10,15,40,0.85) !important;
+    border: 1px solid rgba(226,185,111,0.3) !important;
     border-radius: 10px !important;
-    color: #fff !important;
+    color: #ffffff !important;
     font-family: 'Noto Sans KR', sans-serif !important;
+    caret-color: #e2b96f !important;
+}
+.stTextInput > div > div > input::placeholder,
+.stTextArea > div > div > textarea::placeholder {
+    color: rgba(255,255,255,0.35) !important;
 }
 .stTextInput > div > div > input:focus,
 .stTextArea > div > div > textarea:focus {
     border-color: #e2b96f !important;
     box-shadow: 0 0 0 2px rgba(226,185,111,0.2) !important;
+    background: rgba(10,15,40,0.95) !important;
 }
 label { color: #aabbcc !important; font-size: 0.88rem !important; }
+/* 입력값 텍스트 강제 흰색 */
+input, textarea { color: #ffffff !important; }
 
 /* 파일 업로더 */
 .stFileUploader {
