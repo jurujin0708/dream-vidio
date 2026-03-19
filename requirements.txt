@@ -1,5 +1,6 @@
-@echo off
-set ANTHROPIC_API_KEY=sk-ant-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
-cd /d "%~dp0"
-streamlit run app.py
-pause
+anthropic>=0.25.0
+streamlit>=1.35.0
+pillow>=10.0.0
+moviepy==1.0.3
+opencv-python-headless>=4.9.0
+numpy>=1.26.0
